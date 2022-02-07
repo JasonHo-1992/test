@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<manifest>
+    <!-- remote可以多个,每个定义了一个远程拉取仓库, fetch是仓库的url, 可以使用”..”表示使用repo init -u url里的url -->
+    <remote name="JasonHo-1992" fetch="https://github.com/JasonHo-1992/" />
+
+    <!-- default则设置每个项目的默认仓库和默认分支 -->
+    <!-- default remote="local" revision="func"-->
+
+    <!-- project定义了一个项目,它指明一个远程仓库,和clone到本地来后的目录名称. name为项目的远程仓库名,以上代码拉取的项目是git://localhost/helo -->
+    <project path="local/test" name="test" remote="JasonHo-1992" revision="refs/tags/manifest_test" />
+</manifest>
+
